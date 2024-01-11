@@ -8,7 +8,7 @@ from langchain.chains import LLMChain
 
 def generate_restaurant_name_and_items(cuisine):
 
-    os.environ['OPENAI_API_KEY']= secret_key.api_key
+    os.environ['OPENAI_API_KEY']= st.secrets["api_key"]
     llm = OpenAI(temperature=0.9)
 
     prompt_template_name = PromptTemplate(
