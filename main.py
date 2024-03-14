@@ -22,7 +22,7 @@ if cuisine:
         st.image(str(image_name), caption='Bob Apetit', width=300)
     else:
         st.image(str("bon-appetit.png"), width=300)
-    menu_items = response['menu_items'].split(,)
+    menu_items = response['menu_items'].split(',')
     st.write("**Menu Items**")
     for item in menu_items:
         st.write(item)
